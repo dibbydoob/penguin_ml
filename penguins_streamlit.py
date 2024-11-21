@@ -25,7 +25,7 @@ csv_path = 'penguins.csv'
 rf_path =  'random_forest_penguin.pkl'
 output_path = 'output_penguin.pkl'
 img_path = 'feature_importance.png'
-st.title('Penguin Classifier')
+st.title('Penguin Classifier Cloud Version')
 
 st.write("This app uses 6 inputs to predict the species of penguin using"
          "a model built on the Palmer Penguins dataset. Use the form below"
