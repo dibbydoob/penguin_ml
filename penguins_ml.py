@@ -11,7 +11,8 @@ import matplotlib.pyplot as plt
 
 w_path = WindowsPath(__file__).parent
 data_path = 'penguins.csv'
-full_path = w_path / data_path
+#full_path = w_path / data_path
+full_path = data_path
 
 if full_path.exists():
     penguin_df = pd.read_csv(full_path)

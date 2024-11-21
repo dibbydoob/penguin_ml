@@ -14,12 +14,17 @@ def get_path(filename):
     return WindowsPath(__file__).parent / filename
 
 
-ml_path = get_path('penguins_ml.py')
-csv_path = get_path('penguins.csv')
-rf_path = get_path('random_forest_penguin.pkl')
-output_path = get_path('output_penguin.pkl')
-img_path = get_path('feature_importance.png')
 
+#ml_path = get_path('penguins_ml.py')
+#csv_path = get_path('penguins.csv')
+#rf_path = get_path('random_forest_penguin.pkl')
+#output_path = get_path('output_penguin.pkl')
+#img_path = get_path('feature_importance.png')
+ml_path = 'penguins_ml.py'
+csv_path = 'penguins.csv'
+rf_path =  'random_forest_penguin.pkl'
+output_path = 'output_penguin.pkl'
+img_path = 'feature_importance.png'
 st.title('Penguin Classifier')
 
 st.write("This app uses 6 inputs to predict the species of penguin using"
