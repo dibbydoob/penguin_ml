@@ -9,9 +9,6 @@ from sklearn.model_selection import train_test_split
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-password_guess = st.text_input('What is the Password?')
-
-
 
 def get_path(filename):
     return WindowsPath(__file__).parent / filename
