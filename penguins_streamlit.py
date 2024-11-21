@@ -9,6 +9,10 @@ from sklearn.model_selection import train_test_split
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+password_guess = st.text_input('What is the Password?')
+
+if password_guess != st.secrets["password"]:
+  st.stop()
 
 def get_path(filename):
     return WindowsPath(__file__).parent / filename
@@ -127,4 +131,5 @@ ax = sns.displot(x=penguin_df['flipper_length_mm'], hue=penguin_df['species'])
 plt.axvline(flipper_length)
 plt.title('Flipper Length by Species.')
 st.pyplot(ax)
+
 
